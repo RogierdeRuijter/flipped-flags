@@ -84,6 +84,33 @@
     </main>
   </body>
 
+  <script
+    defer
+    src="https://www.googletagmanager.com/gtag/js?id=G-YRQ6W6E7D3"
+  ></script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      if (window.location.href.includes("github")) {
+        dataLayer.push(arguments);
+      } else {
+        console.groupCollapsed("gtag arguments");
+        console.log(arguments);
+        console.groupEnd();
+      }
+    }
+
+    gtag("consent", "default", {
+      ad_storage: "denied",
+    });
+
+    gtag("js", new Date());
+
+    gtag("config", "G-YRQ6W6E7D3", {
+      anonymize_ip: true,
+    });
+  </script>
+
   <script type="text/javascript">
     function shuffle(a) {
       for (let i = a.length - 1; i > 0; i--) {
